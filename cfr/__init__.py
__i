@@ -1,0 +1,24 @@
+"""
+---
+title: Regret Minimization in Games with Incomplete Information (CFR)
+summary: >
+  This is an annotated implementation/tutorial of Regret Minimization in Games with Incomplete Information
+---
+
+# Regret Minimization in Games with Incomplete Information (CFR)
+
+The paper
+[Regret Minimization in Games with Incomplete Information](http://martin.zinkevich.org/publications/regretpoker.pdf)
+introduces counterfactual regret and how minimizing counterfactual regret through self-play
+can be used to reach Nash equilibrium.
+The algorithm is called Counterfactual Regret Minimization (**CFR**).
+
+The paper
+[Monte Carlo Sampling for Regret Minimization in Extensive Games](http://mlanctot.info/files/papers/nips09mccfr.pdf)
+introduces Monte Carlo Counterfactual Regret Minimization (**MCCFR**),
+where we sample from the game tree and estimate the regrets.
+
+We tried to keep our Python implementation easy-to-understand like a tutorial.
+We run it on [a very simple imperfect information game called Kuhn poker](kuhn/index.html).
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/labmlai/annotated_deep_learning_paper_implementations/blob/master/labml_nn/cfr/kuhn/experiment.ipynb)
